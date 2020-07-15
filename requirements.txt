@@ -1,0 +1,32 @@
+# musicautobot
+jupyter
+matplotlib
+music21
+fastai
+pebble
+
+# PRNN
+progress
+pretty_midi
+
+# torchvision
+pillow==6.2.2
+pafy
+sklearn
+
+# musicautobot
+jupyter
+matplotlib
+music21
+fastai
+pebble
+
+# PRNN
+progress
+pretty_midi
+
+# torchvision
+pillow==6.2.2
+pafy
+
+progressbar
