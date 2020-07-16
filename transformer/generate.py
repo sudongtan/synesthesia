@@ -19,7 +19,10 @@ if __name__ == "__main__":
         help="number of words, controling the lengths of the generated midi",
     )
     parser.add_argument(
-        "-m", type=str, default="transformer", help="name of the model"
+        "-m",
+        type=str,
+        default="model_transformer_example",
+        help="name of the model",
     )
 
     args = parser.parse_args()

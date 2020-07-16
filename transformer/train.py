@@ -36,7 +36,7 @@ if __name__ == "__main__":
 
     learn = music_model_learner(data, config=config.copy())
 
-    model_name = "transformer_example"
+    model_name = "model_transformer_example"
     callbacks = [
         SaveModelCallback(
             learn, every="improvement", monitor="valid_loss", name=model_name

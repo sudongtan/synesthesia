@@ -36,7 +36,7 @@ def getopt():
     )
 
     parser.add_option(
-        "-b", "--batch-size", dest="batch_size", type="int", default=8
+        "-b", "--batch-size", dest="batch_size", type="int", default=1
     )
 
     parser.add_option(
@@ -57,11 +57,11 @@ def getopt():
     )
 
     parser.add_option(
-        "-l", "--max-length", dest="max_len", type="int", default=0
+        "-l", "--max-length", dest="max_len", type="int", default=100
     )
 
     parser.add_option(
-        "-g", "--greedy-ratio", dest="greedy_ratio", type="float", default=1.0
+        "-g", "--greedy-ratio", dest="greedy_ratio", type="float", default=1
     )
 
     parser.add_option(
@@ -69,7 +69,7 @@ def getopt():
     )
 
     parser.add_option(
-        "-T", "--temperature", dest="temperature", type="float", default=1.0
+        "-T", "--temperature", dest="temperature", type="float", default=1
     )
 
     parser.add_option(
@@ -199,6 +199,6 @@ with torch.no_grad():
 
     name = os.path.basename(image_path).split(".")[0]
     output_dir = "../output/rnn"
-    output_path = os.path.join(output_dir, name)
+    output_path = os.path.join(output_dir, name) + ".MID"
     n_notes = utils.event_indeces_to_midi_file(output, output_path)
     print(f"===> {output_path} ({n_notes} notes)")

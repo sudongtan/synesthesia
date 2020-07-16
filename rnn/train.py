@@ -33,7 +33,7 @@ def get_options():
         "--session",
         dest="sess_path",
         type="string",
-        default="save/train.sess",
+        default="../models/model_rnn_example.sess",
     )
 
     parser.add_option(
