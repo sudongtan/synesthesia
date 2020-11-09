@@ -1,15 +1,6 @@
 # Synesthesia
 
-Code for the paper [Automated Music Generation for Visual Art through Emotion](http://computationalcreativity.net/iccc20/papers/137-iccc20.pdf).
-
-## TODO
-
-Test run on different computers
-
-  
-## Overview
-
-This is the media samples and code related to paper, 
+Code and media samples for the paper [Automated Music Generation for Visual Art through Emotion](http://computationalcreativity.net/iccc20/papers/137-iccc20.pdf).
 
 ## Generated Samples
 ||||||
@@ -27,17 +18,19 @@ Sources of the images: https://www.imageemotion.org/
 
 ## Instructions
 
-## Installation
+### Dependencies
+
 - `python3.7`
 - `cuda10`
 - `musescore`
-- `python dependencies`
-```bash
-pip install -r requirements.txt
-```
+
+The remaining python dependencies can be installed with:
+
+    pip install -r requirements.txt
+
 ### Training dataset
 
-The full dataset can be downloaded from https://www.cs.rochester.edu/u/qyou/deepemotion/
+The full dataset can be downloaded from https://www.cs.rochester.edu/u/qyou/deepemotion/ .
 
 ### PerformanceRNN
 
@@ -47,7 +40,7 @@ python preprocess.py ../dataset/midi/train ../dataset/midi/rnn # preprocess data
 python train.py -s ../model/rnn_example.sess -d ../dataset/midi/rnn -i 10 # train model
 python generate.py -i ../dataset/image/test/1.jpg #generate music from a given image
 ```
-The implementation of performance RNN is modified from https://github.com/djosix/Performance-RNN-PyTorch
+The implementation of performance RNN is modified from https://github.com/djosix/Performance-RNN-PyTorch .
 
 
 ### Transformer
@@ -59,4 +52,4 @@ python train.py # train model
 python generate.py -i ../dataset/image/test/1.jpg #generate music from a given image
 ```
 
-The implementation of transformer is modified from https://github.com/bearpelican/musicautobot
+The implementation of transformer is modified from https://github.com/bearpelican/musicautobot .
