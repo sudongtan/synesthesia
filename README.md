@@ -1,5 +1,7 @@
 # Synesthesia
 
+Code for the paper [Automated Music Generation for Visual Art through Emotion](http://computationalcreativity.net/iccc20/papers/137-iccc20.pdf).
+
 ## TODO
 
 Test run on different computers
